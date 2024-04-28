@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>"Ronaldo Venancio da Silva - WDD 230 - Web Frontend Development"</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Ronaldo Venancio da Silva - course assignemnt portal">
+    <meta name="author" content="Ronaldo Venancio da Silva">
+</head>
+<body>
+    <!--<div class="content"> -->
+    <header>
+        <img src="images/profile.jpg" alt="Ronaldo Venancio da Silva Profile" width="75" height="100">
+        <span>Ronaldo Venancio da Silva</span>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <hr>
+        <div class="parent">
+            <section id="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01:<a href="week01"></a></li>
+                    <li>Week 02:<a href="week02"></a></li>
+                    <li>Week 03:<a href="week03"></a></li>
+                    <li>Week 04:<a href="week04"></a></li>
+                    <li>Week 05:<a href="week05"></a></li>
+                    <li>Week 06:<a href="week06"></a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <p>Recife-PE, Brazil</p>      
+                <p>The current temperature in Recife-PE, Brazil is <span id="current-temp"></span>&deg;F</p>    
+                <p>Total visits: <span id="counter"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+            &copy; <span id="currentYear">2024</span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <!--</div> -->
+</body>
+ <script src="/scripts/getDates.js"></script>
+
+ <script>
+    // Check if the counter exists in local storage
+    if (localStorage.getItem("page_view")) {
+        // Increment the existing counter
+        let count = parseInt(localStorage.getItem("page_view"));
+        count++;
+        localStorage.setItem("page_view", count);
+        document.getElementById("counter").textContent = count;
+    } else {
+        // Initialize the counter
+        localStorage.setItem("page_view", 1);
+        document.getElementById("counter").textContent = 1;
+    }
+</script>
+
+
+</html>
