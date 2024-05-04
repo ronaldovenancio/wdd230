@@ -10,18 +10,14 @@ h1 {
     font-weight: 100;
 }
 
+
 nav {
     background-color: black;
-    display: grid;
-}
-
-nav ul {
-    list-style-type: none;
-    display:inline-flex;
+    display: block;
 }
 
 nav a {
-    display:grid;
+    display:block;
     color: #fff;
     text-align: center;
     padding: .5rem;

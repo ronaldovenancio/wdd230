@@ -69,12 +69,17 @@
         margin: 1rem 0;
     }
     
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
 
     nav ul li {
         display: grid;
         align-items: center;
         justify-content: center;
         width: 100%;
+        flex: 1 1 100%;
       }
 
     .parent h2 {

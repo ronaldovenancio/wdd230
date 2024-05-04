@@ -62,36 +62,11 @@
     </main>
     <footer class="footer">
         <p>
-            &copy; <span id="currentYear">2024</span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+            &copy; <span id="currentYear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
         </p>
         <p id="lastModified"></p>
     </footer>
-    <!--</div> -->
-    <script src="/scripts/getDates.js"></script>
-    <script>
-        // Wait for the DOM to fully load
-        document.addEventListener("DOMContentLoaded", function() {
-            // Check if the counter exists in local storage
-            if (localStorage.getItem("page_view")) {
-                // Increment the existing counter
-                let count = parseInt(localStorage.getItem("page_view"));
-                count++;
-                localStorage.setItem("page_view", count);
-                // Update the counter element
-                let counterElement = document.getElementById("counter");
-                if (counterElement) {
-                    counterElement.textContent = count;
-                }
-            } else {
-                // Initialize the counter
-                localStorage.setItem("page_view", 1);
-                // Update the counter element
-                let counterElement = document.getElementById("counter");
-                if (counterElement) {
-                    counterElement.textContent = 1;
-                }
-            }
-        });
-    </script>
+    <!--</div> --> 
 </body>
+<script src="/scripts/getDates.js"></script>
 </html>

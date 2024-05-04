@@ -24,11 +24,11 @@ if (localStorage.getItem("page_view")) {
 }
 
 
-// Dynamically populate the current year
+// The current year is showed in the footer
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
-// Populate the lastModified paragraph with JavaScript code
+// The lastModified paragraph with JavaScript code
 const lastModifiedElement = document.getElementById("lastModified");
 lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
 
@@ -78,6 +78,30 @@ async function apiFetch() {
   }
 
   //************************** */
+
+  // Wait for the DOM to fully load
+  document.addEventListener("DOMContentLoaded", function() {
+    // Check if the counter exists in local storage
+    if (localStorage.getItem("page_view")) {
+        // Increment the existing counter
+        let count = parseInt(localStorage.getItem("page_view"));
+        count++;
+        localStorage.setItem("page_view", count);
+        // Update the counter element
+        let counterElement = document.getElementById("counter");
+        if (counterElement) {
+            counterElement.textContent = count;
+        }
+    } else {
+        // Initialize the counter
+        localStorage.setItem("page_view", 1);
+        // Update the counter element
+        let counterElement = document.getElementById("counter");
+        if (counterElement) {
+            counterElement.textContent = 1;
+        }
+    }
+});
 
 
 
