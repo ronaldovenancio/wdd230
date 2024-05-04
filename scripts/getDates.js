@@ -77,7 +77,7 @@ async function apiFetch() {
     weatherIcon.setAttribute('alt', desc_cap);
   }
 
-  //************************** */
+  /* *************************
 
   // Wait for the DOM to fully load
   document.addEventListener("DOMContentLoaded", function() {
@@ -100,8 +100,8 @@ async function apiFetch() {
         if (counterElement) {
             counterElement.textContent = 1;
         }
-    }
-});
+    } 
+}); */
 
 
 
