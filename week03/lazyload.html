@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <meta name="description" content="Native Lazy Loading Assignment for WDD 230: Web Frontend Development">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../week03/styles/normalize.css">
+    <link rel="stylesheet" href="../week03/styles/lazyload.css">
+    <title>WDD 230 - Lazy Loading - Ronaldo Venancio da Silva</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+    <div class="content">
+    <header>
+        <div class="header-top">
+            <span id="link-portal"><a href="../index.html">Portal</a></span>
+        </div>
+        <div class="header-bottom">
+            <h1 id="author">Lazy Loading</h1>
+        </div>
+    </header>
+    <main>
+        <picture>
+            <img data-src="../week03/images/image-1.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 1" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-2.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 2" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-3.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 3" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-4.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 4" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-5.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 5" loading="lazy" width="400" height="600">
+        </picture>
+
+        <picture>
+            <img data-src="../week03/images/image-6.jpg" src="../week03/images/placeholder-400x600.webp" alt="Placeholder Image 6" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    </div>
+    <footer class="footer">
+        <p id="copy">&copy; <span id="current-year"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+    </footer>
+    <script src="../week03/scripts/lazyload.js"></script> 
+</body>
+</html>

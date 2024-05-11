@@ -1,6 +1,11 @@
 *{box-sizing: border-box;
     max-width: 640px;}
 
+.content {
+    align-content: center;
+    max-width: 100%;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -70,11 +75,14 @@ li {
 
 main {
     /*max-width: 640px; */
+    max-width:100%;
     margin: 1rem auto;
     border: 0px solid #bbb;
     padding: 1rem;
     background-color: white;
-    background: white
+    background: white;
+    margin-top: 1rem;
+    padding:0;
     
 }
 
@@ -83,12 +91,106 @@ header {
         margin: 0% auto;
         border: 0px solid #bbb;
         padding: 1rem;
-        background-color: #232d59;
+        background-color: #232d59; 
         font-size: 1.5rem;
         align-content: center;
         text-align: center;
         color: white;  
+        position: relative;
     }
+
+#darkBtn{
+    position: absolute;
+    top: 1 rem;
+    right: 1rem;
+    width: 24px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#myButton::before {
+    content: "\2630"
+}
+
+#myButton.open::before {
+    content: "x"
+}
+
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align:left;
+    padding: .25rem 2vw;
+    /*position: absolute;  */
+    /*left: 1vw;  */
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+ul.menuLinks {
+   display: none;   
+   list-style-type: none; /* effects large */
+}
+
+
+ul.open.menuLinks {
+    display: block;
+}   
+
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {overflow: hidden;}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+#main.dark {
+    background: black;
+}
+
+#main.dark h2 {
+    color: white;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero span {
+    position: absolute;
+    bottom:40%;
+    left: 20px;
+    width: 30%;
+    background-color: rgba(255,255,255,0.2);
+    padding: 1rem;
+    text-align: center;
+}
 
 footer {
    /* max-width: 640px; */

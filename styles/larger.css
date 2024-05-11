@@ -1,7 +1,8 @@
-@media screen and (min-width: 32.5rem) {
+@media screen and (min-width: 40em) {
 
     .content {
         align-content: center;
+        max-width: 100%;
     }
 
     body {
@@ -14,7 +15,9 @@
         border: 0px solid #bbb;
         padding: 1rem;
         background-color: white;
-        background: white
+        background: white;
+        margin-top: 1rem;
+        padding: 0;
         
     }
 
@@ -33,7 +36,7 @@
         margin: 0% auto;
         border: 0px solid #bbb;
         padding: 1rem;
-        background-color: #232d59;
+        background-color: #232d59; 
         font-size: 1.5rem;
         align-content: center;
         text-align: center;
@@ -68,6 +71,10 @@
         overflow: hidden;
         margin: 1rem 0;
     }
+   
+    nav {
+        background-color: black;
+    }
     
     nav ul {
         display: flex;
@@ -95,7 +102,51 @@
     .parent p {
         color: black;
     }
+
+    myButton {
+        display: none;
     }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    nav {grid-template-rows: 1fr;}
+
+    #current-temp{
+        color: black;
+    }
+
+
+    #hero {
+        position: relative;
+    }
+    
+    #hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #hero span {
+        font-size: 2rem;
+        position: absolute;
+        bottom: 60%;
+        left: 200px;
+        width: 30%;
+        background-color: rgba(255,255,255,0.2);
+        padding: 1rem;
+        text-align: center;
+
+
+
+
+}
     
     
     

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -22,42 +22,72 @@
 
 </head>
 <body>
-    <!--<div class="content"> -->
-    <header>
-        <img src="images/profile.jpg" alt="Ronaldo Venancio da Silva Profile" width="75" height="100">
-        <span>Ronaldo Venancio da Silva</span>
-    </header>
-    <nav>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
-            <li><a href="">Site Plan</a></li>
-            <li><a href="">Form</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <hr>
-        <div class="parent">
-            <section id="card">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li>Week 01:<a href="week01"></a></li>
-                    <li>Week 02:<a href="week02"></a></li>
-                    <li>Week 03:<a href="week03"></a></li>
-                    <li>Week 04:<a href="week04"></a></li>
-                    <li>Week 05:<a href="week05"></a></li>
-                    <li>Week 06:<a href="week06"></a></li>
-                </ul>
-            </section>
-            <section class="card">
-                <h2>Information</h2>
-                <p>Recife-PE, Brazil</p>      
-                <p>The current temperature in Recife-PE, Brazil is <span id="current-temp"></span>&deg;F</p>    
-                <p>Total visits: <span id="counter"></span></p>
-            </section>
+    <div class="content">
+        <header>
+            <div class="header-top">
+        <!--   <span id="link-byui"><a href="https://www.byui.edu/">BYU-Idaho</a></span>
+            <span id="link-linkedin"><a href="https://www.linkedin.com/">LinkedIn</a></span>
+           -->
+            <img src="images/dark.svg" alt="dark mode" id="darkBtn">
+            </div>
+        <div class="header-middle">
+            <ul class="menu">
+                <li id="darkBtn">
+                    
+                </li>
+            </ul>
         </div>
-    </main>
+        <div class="header-bottom">
+            <img src="images/profile.jpg" alt="Ronaldo Venancio da Silva Profile" width="75" height="100">
+            <span>Ronaldo Venancio da Silva</span>
+        </div>
+        </header>
+        <nav id="menuLinks">
+            <button id="myButton"></button>   <!-- &#9776 code to the simbol -->
+            <ul class="menuLinks">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
+                <li><a href="">Site Plan</a></li>
+                <li><a href="">Form</a></li>
+            </ul>
+        </nav>
+        <div id="dark-mode"></div>
+        <main>
+            <div id="hero">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/hero-small-500x250.webp" loading="lazy" width="500" height="250">
+                    <source media="(min-width: 520px) and (max-width: 1000px)" srcset="images/hero-medium-1000x500.webp" loading="lazy" width="1000" height="500">
+                    <img id="hero-img" src="images/hero-large-1278x750.webp" alt="Picture of the Recife-PE Temple" loading="lazy" width="1500px" height="750px">
+                    <span>Recife-PE Temple</span>
+                </picture>
+             <!--   <div id="hero-text">Recife-PE Temple</div>   -->
+            </div>
+    
+            <div id="page-title" class="adjustable-b">
+                <h1>WDD 230: Web Frontend Development</h1>
+                <hr>
+            </div>
+            <div class="parent">
+                <section id="card">
+                    <h2>Learning Activities</h2>
+                    <ul>
+                        <li>Week 01:<a href="week01"></a></li>
+                        <li>Week 02:<a href="week02"></a></li>
+                        <li>Week 03:<a href="week03"></a></li>
+                        <li>Week 04:<a href="week04"></a></li>
+                        <li>Week 05:<a href="week05"></a></li>
+                        <li>Week 06:<a href="week06"></a></li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h2>Information</h2>
+                    <p>Recife-PE, Brazil</p>      
+                    <p>The current temperature in Recife-PE, Brazil is <span id="current-temp"></span>&deg;F</p>    
+                    <p>Total visits: <span id="counter"></span></p>
+                </section>
+            </div>
+        </main>
+     </div>  
     <footer class="footer">
         <p>
             &copy; <span id="currentYear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
@@ -65,7 +95,8 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/responsive-menu.js"></script>
-    <!--</div> --> 
+   <!-- <script src="scripts/responsive-menu.js"></script>  -->
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

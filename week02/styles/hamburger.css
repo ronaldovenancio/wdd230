@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
+	margin: 1rem;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+	margin: 0.5m;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 1rem auto;
+	}
+}
