@@ -1,0 +1,154 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*----------- FORM CSS PROPERTIES --------------*/
+form fieldset {
+    padding: 10px 12px;
+    border: 2px solid navy;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+form legend {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 8px;
+    color: navy;
+}
+
+.applicant-info, .other-info {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.course-info {
+    font-size: 16px;
+}
+
+form div {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+form label {
+    display: block;
+    padding: 4px 20px;
+}
+
+form label input:required {
+    border-left: 8px solid orange;
+    border-radius: 8px;
+}
+
+.radio input, .check input {
+    margin-right: 10px;
+}
+
+input, select {
+    padding: 12px 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+
+.applicant-info input, .other-info input, .other-info select {
+   display: block;
+}
+
+.submit-button {
+    font-size: 22px;
+    font-weight: 600;
+    width: 70%;
+    margin: 20px auto;
+    border: 2px solid gray;
+    background-color: lightgray;
+    color: black;
+}
+
+.submit-button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.submit-button:active {
+    background-color: gray;
+    color: white;
+}
+

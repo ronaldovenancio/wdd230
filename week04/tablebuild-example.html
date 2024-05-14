@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <meta name="description" content="Native Lazy Loading Assignment for WDD 230: Web Frontend Development">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../week04/styles/normalize.css">
+    <link rel="stylesheet" href="../week04/styles/tablebuild-example.css">
+    <title>WDD 230 - Lazy Loading - Ronaldo Venancio da Silva</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+    <div class="content">
+    <header>
+        <div class="header-top">
+            <span id="link-portal"><a href="../index.html">Portal</a></span>
+        </div>
+        <div class="header-bottom">
+            <h1 id="author">Table Example</h1>
+        </div>
+    </header>
+    <main>
+        <table>
+            <caption>Table 1: District 🥑 Sales Data</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" scope="colgroup">Wasatch Sales</th>
+                </tr>
+                <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>July</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td class="highlight">8,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>4,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>2,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    </div>
+    <footer class="footer">
+        <p id="copy">&copy; <span id="current-year"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+    </footer>
+    <script src="/scripts/get-dates.js"></script> 
+</body>
+</html>

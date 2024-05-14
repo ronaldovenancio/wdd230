@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This begining of this file was created by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <meta name="description" content="HTML Form Tutorial">
+
+    <link href="../week04/styles/normalize.css" rel="stylesheet">
+    <link href="../week04/styles/form-base.css" rel="stylesheet">
+    <link href="../week04/styles/form-larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Course Proposal Application</h1>
+    <form method="get" action="form-thanks.html">
+        <fieldset class="applicant-info">
+            <legend>Applicant Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Phone<input type="tel" name="phone" placeholder="1234567890"></label>
+            <label>Email*<input type="email" name="email" placeholder="nameuser@gmail.com" required></label>
+            <label>Url<input type="url" name="url" placeholder="http://"></label>
+        </fieldset>
+
+        <fieldset class="course-info">
+            <legend>Course Information</legend>
+            <div>Audience</div>
+            <label class="radio"><input type="radio" name="audience" value="beginner">Beginner</label>
+            <label class="radio"><input type="radio" name="audience" value="intermediate">Intermediate</label>
+            <label class="radio"><input type="radio" name="audience" value="advanced">Advanced</label>
+            
+            <div>Sofware Needed</div>
+            <label class="check"><input type="checkbox" name="editing" value="yes">Photo Dediting</label>
+            <label class="check"><input type="checkbox" name="code" value="yes">Coding</label>
+            <label class="check"><input type="checkbox" name="process" value="yes">Preprocessor</label>
+            <label class="check"><input type="checkbox" name="client" value="yes">FTP Client</label>
+        </fieldset>
+
+        <fieldset class="other-info">
+            <legend>Funding</legend>
+            <label>Anticipated Completion Date
+                <input type="date" name="completeDate">
+            </label>
+            <label>Course Subject
+                <select name="subject">
+                    <option value="">Please Select</option>
+                    <option value="software">Software Development</option>
+                    <option value="creative">Creative Professional</option>
+                    <option value="info">Information Technology</option>
+                    <option value="construction">Construction</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="business">Business Professional</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <label>How Many Authors
+                <input type="number" name="authors">
+            </label>
+        </fieldset>
+
+        <input class="submit-button" type="submit">
+    </form>
+    </main>
+
+    <footer class="footer">
+        <p id="copy">&copy; <span id="current-year"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. 123-555-6789 .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+    </footer>
+    <script src="/scripts/get-dates.js"></script> 
+    <script src="../week04/scripts/scripts.js"></script>
+</body>
+
+</html>

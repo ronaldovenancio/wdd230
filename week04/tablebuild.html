@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <meta name="description" content="Table Build Assignment for WDD 230: Web Frontend Development">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../week04/styles/normalize.css">
+    <link rel="stylesheet" href="../week04/styles/tablebuild.css">
+    <title>WDD 230 - Table Build - Ronaldo Venancio da Silva</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+    <div class="content">
+    <header>
+        <div class="header-top">
+            <span id="link-portal"><a href="../index.html">Portal</a></span>
+        </div>
+        <div class="header-bottom">
+            <h1 id="author">HTML Tables for Data Presentation</h1>
+        </div>
+    </header>
+    <main>
+
+        <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">ACME Wild Services</th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feature 1</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Feature 2</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Feature 3</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    </div>
+    <footer class="footer">
+        <p id="copy">&copy; <span id="current-year"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+    </footer>
+    <script src="/scripts/get-dates.js"></script> 
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* Fonts from Google Fonts @ https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=PT+Sans&display=swap');
+
+:root {
+    /* Colors */
+        --primary: #089f3f;
+        --secondary: #12130F;
+        --accent1: #5D737E;
+        --accent2: #fdffa3;
+        
+        --white: #ffffff;
+        --gray: #cccccc;
+        --black: #000000;
+
+        --shadow: #0303038e;
+        --shading: #03030330;
+
+    /* Site Plan Colors */
+        --b-primary: #a0001e;
+        --b-secondary: #180e0d;
+        --b-accent1: #9d6451;
+        --b-accent2: #e2beab;
+
+    /* Fonts */
+        --heading: 'Domine', georgia, serif;
+        --paragraph: 'PT Sans Narrow', tahoma, sans-serif;
+    }
+
+/* Font Sizes */
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.25em; padding: 12px 0px 0px 0px;}
+li, p {font-size: 1em; padding: 12px 0px;}
+
+h1, h2, h3 {
+    font-family: var(--heading);
+    font-weight: 700;
+    margin: 0px;
+}
+h4, h5, h6 {
+    font-family: var(--heading);
+    font-weight: 700;
+    margin: 0px;
+}
+a, li, p, span {
+    font-family: var(--paragraph);
+    margin: 0px;
+}
+
+/* Override Default CSS */
+a {text-decoration: none;}
+li {list-style: none;}
+ul {padding-left: 16px;}
+
+/* Page CSS */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+header, main, body {
+    margin: 0px;
+}
+
+header {
+    background-color: var(--primary);
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary);
+}
+
+header a {padding: 10px;}
+header a:link, header a:visited {color: var(--white);}
+header a:hover {color: var(--accent2);}
+header a:active {color: var(--accent1);}
+#link-portal {margin: auto 0; padding: 10px;}
+
+.header-bottom {
+    padding: 30px;
+}
+
+#profile {
+    width: 100px; height: 100px;
+    margin-right: 10px;
+    border: 6px solid var(--white);
+    border-radius: 60px;
+}
+
+#author {
+    padding: 0px;
+    text-align: center;
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.box-title {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 6px 12px;
+    font-size: 24px;
+    background-color: var(--accent1);
+    background-image: linear-gradient(var(--accent1), var(--shading));
+    color: var(--white);
+}
+
+.box-content {
+    height: auto;
+    min-height: 80px;
+    padding: 10px;
+}
+
+.box-sub {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer {
+    padding: 20px 0px;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+hr {
+    margin-top: 20px;
+    border: 3px solid var(--accent1);
+    border-radius: 6px;
+}
+
+/* Table CSS */
+
+table caption {
+    padding: 4px;
+    font-family: var(--paragraph);
+    font-size: 16px;
+}
+
+table {
+    margin: 60px auto;
+    border: 6px solid var(--primary);
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px 0px var(--shadow);
+    border-collapse: collapse;
+}
+
+tr:first-child th {
+    font-family: var(--heading);
+    font-size: 32px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+th:first-child {
+    background-color: var(--black);
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid var(--black);
+    font-family: var(--paragraph);
+    font-size: 22px;
+}
+
+th {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--gray);
+}
+
+
+/* Sticky Footer */
+html, body {
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+}

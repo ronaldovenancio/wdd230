@@ -1,6 +1,6 @@
 /* Dark Mode Code */
-const myBtn = document.querySelector('#darkBtn1');
-const main = document.querySelector("main");  
+const myBtn = document.querySelector('#dark-mode');
+const main = document.querySelector("main");
 
 
 myBtn.addEventListener('click', () => {
