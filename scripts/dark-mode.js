@@ -1,18 +1,27 @@
 /* Dark Mode Code */
-const myBtn = document.querySelector('#darkBtn1');
-const main = document.querySelector("main");  
 
+const darkmodeButton = document.querySelector("#dark-mode");
+const darkmodeStatus = document.querySelector("#dark-mode-status");
+darkmodeStatus.classList.add("off");
+darkmodeStatus.textContent = "(off)";
 
-myBtn.addEventListener('click', () => {
-	if (myBtn.textContent.includes("images/dark.svg")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-		myBtn.textContent = "images/dark.sv";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		myBtn.textContent = "images/dark.sv";
+const content = document.querySelector(".content");
+const lightElements = document.querySelectorAll(".adjustable");
+const otherElements = document.querySelectorAll(".adjustable-b");
+
+darkmodeButton.addEventListener("click", () => {
+	if (darkmodeStatus.classList.contains('on') == true) {
+        /* If dark mode is switched off... */
+		darkmodeStatus.classList.remove("on");
+		darkmodeStatus.classList.add("off");
+		darkmodeStatus.textContent = "(off)";
+	} else { 
+        /* If dark mode is switched on... */
+		darkmodeStatus.classList.remove("off");
+		darkmodeStatus.classList.add("on");
+		darkmodeStatus.textContent = "(on)";
 	}
-});
-
-
+    content.classList.toggle("dark-background");
+    lightElements.forEach((item) => item.classList.toggle("dark"));
+    otherElements.forEach((item) => item.classList.toggle("dark-text"));
+})

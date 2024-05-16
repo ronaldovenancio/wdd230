@@ -1,0 +1,151 @@
+@media screen and (min-width: 40em) {
+
+    .content {
+        align-content: center;
+        max-width: 100%;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    main {
+        /*max-width: 640px; */
+        margin: 1rem auto;
+        border: 0px solid #bbb;
+        padding: 1rem;
+        background-color: white;
+        background: white;
+        margin-top: 1rem;
+        padding: 0;
+        
+    }
+
+    footer {
+       /* max-width: 640px; */
+        margin: 1rem auto;
+        border: 1px solid #bbb;
+        padding: 1rem;
+        background-color: white;
+        background: #232d59;
+    }
+    
+    
+    header {
+        max-width:100%;
+        margin: 0% auto;
+        border: 0px solid #bbb;
+        padding: 1rem;
+        background-color: #232d59; 
+        font-size: 1.5rem;
+        align-content: center;
+        text-align: center;
+        color: white;
+        
+        
+    }
+    
+   /* main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1rem;
+        background:rgb(99, 125, 174);
+    } */
+    
+    section {
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        background: white;
+    }
+
+    .parent section {
+        box-shadow: 1px 1px 10px black;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+    }
+   
+    nav {
+        background-color: black;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex: 1 1 100%;
+      }
+
+    .parent h2 {
+        background-color: #232d59;
+        align-content: center;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1rem 0;
+    }
+
+    .parent p {
+        color: black;
+    }
+
+    myButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    nav {grid-template-rows: 1fr;}
+
+    #current-temp{
+        color: black;
+    }
+
+
+    #hero {
+        position: relative;
+    }
+    
+    #hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #hero span {
+        font-size: 2rem;
+        position: absolute;
+        bottom: 60%;
+        left: 200px;
+        width: 30%;
+        background-color: rgba(255,255,255,0.2);
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
+    
+    
+    
+    

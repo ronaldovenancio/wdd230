@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="WDD230 Assignment">
+    <meta name="og:description" content="The assignment by Ronaldo Venancio da Silva in WDD230 at BYU.">
+    <meta name="og:image" content=" images/image.jpg">
+    <meta name="og:url" content="https://ronaldovenancio.github.io/wdd230/">
+    <title>Ronaldo Venancio da Silva - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Ronaldo Venancio da Silva - Course Assignment">
+    <meta name="author" content="Ronaldo Venancio da Silva">
+
+
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="header-top">
+        <!--   <span id="link-byui"><a href="https://www.byui.edu/">BYU-Idaho</a></span>
+            <span id="link-linkedin"><a href="https://www.linkedin.com/">LinkedIn</a></span>
+           -->
+            <img src="images/dark.svg" alt="dark mode" id="darkBtn1">
+            </div>
+        <div class="header-middle">
+            <ul class="menu">
+                <li id="darkBtn2">
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="header-bottom">
+            <img src="images/profile.jpg" alt="Ronaldo Venancio da Silva Profile" width="75" height="100">
+            <span>Ronaldo Venancio da Silva</span>
+        </div>
+        </header>
+        <nav id="menuLinks">
+            <button id="myButton"></button>   <!-- &#9776 code to the simbol -->
+            <ul class="menuLinks">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
+                <li><a href="">Site Plan</a></li>
+                <li><a href="">Form</a></li>
+            </ul>
+        </nav>
+        <div id="dark-mode"></div>
+        <main>
+            <div id="hero">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/hero-small-500x250.webp" width="500" height="250">
+                    <source media="(min-width: 520px) and (max-width: 1020px)" srcset="images/hero-medium-1000x500.webp" width="1000" height="500">
+                    <img id="hero-img" src="images/hero-large-1278x750.webp" alt="Picture of the Recife-PE Temple" width="1500" height="750">
+                </picture>
+                <span>Recife-PE Temple</span>  
+             <!-- <div id="hero-text">Recife-PE Temple</div>    -->
+            </div>
+    
+            <div id="page-title" class="adjustable-b">
+                <h1>WDD 230: Web Frontend Development</h1>
+                <hr>
+            </div>
+            <div class="parent">
+                <section id="card">
+                    <h2>Learning Activities</h2>
+                    <ul>
+                        <li>Week 01:<a href="week01"></a></li>
+                        <li>Week 02:<a href="week02"></a></li>
+                        <li>Week 03:<a href="week03"></a></li>
+                        <li>Week 04:<a href="week04"></a></li>
+                        <li>Week 05:<a href="week05"></a></li>
+                        <li>Week 06:<a href="week06"></a></li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h2>Information</h2>
+                    <p>Recife-PE, Brazil</p>      
+                    <p>The current temperature in Recife-PE, Brazil is <span id="current-temp"></span>&deg;F</p>    
+                    <p>Total visits: <span id="counter"></span></p>
+                </section>
+            </div>
+        </main>
+     </div>  
+    <footer class="footer">
+        <p>
+            &copy; <span id="currentYear"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/getDates.js"></script>
+   <!-- <script src="scripts/responsive-menu.js"></script>  -->
+    <script src="../scripts/dark-mode.js"></script>
+    <script src="../scripts/scripts.js"></script>
+   
+    <script src="../scripts/lazyload.js"></script>
+    <script src="../scripts/weather.js"></script>
+
+</body>
+</html>
