@@ -58,15 +58,15 @@ async function apiFetch() {
     switch(icon) {
         /* Day Icons */
         case "01d": // clear
-            return "../chamber/images/weather/sunny-64px.webp";
+            return "chamber/images/weather/sunny-64px.webp";
         case "02d": // few clouds
-            return "../chamber/images/weather/part-cloudy-64px.webp";
+            return "chamber/images/weather/part-cloudy-64px.webp";
         case "03d": // scattered clouds
-            return "../chamber/images/weather/cloudy-64px.webp";
+            return "chamber/images/weather/cloudy-64px.webp";
         case "04d": // broken clouds
-            return "../chamber/images/weather/cloudy-64px.webp";
+            return "chamber/images/weather/cloudy-64px.webp";
         case "09d": // shower rain
-            return "../chamber/images/weather/rainy-64px.webp";
+            return "chamber/images/weather/rainy-64px.webp";
         case "10d": // rain
             return "../chamber/images/weather/rainy-64px.webp";
         case "11d": // thunderstorm
