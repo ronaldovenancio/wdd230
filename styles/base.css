@@ -156,6 +156,7 @@ li p.open {
 /* Temporary Toggle CSS Properties */
 .off {
     color: var(--bad);
+    color: #eecc1a;
 }
 
 .on {
