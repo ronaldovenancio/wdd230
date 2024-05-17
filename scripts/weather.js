@@ -68,32 +68,32 @@ async function apiFetch() {
         case "09d": // shower rain
             return "chamber/images/weather/rainy-64px.webp";
         case "10d": // rain
-            return "../chamber/images/weather/rainy-64px.webp";
+            return "chamber/images/weather/rainy-64px.webp";
         case "11d": // thunderstorm
-            return "../chamber/images/weather/stormy-64px.webp";
+            return "chamber/images/weather/stormy-64px.webp";
         case "13d": // snow
-            return "../chamber/images/weather/snowy-64px.webp";
+            return "chamber/images/weather/snowy-64px.webp";
         case "50d": // mist
-            return "../chamber/images/weather/hazy-64px.webp";
+            return "chamber/images/weather/hazy-64px.webp";
 
         /* Night Icons */
         case "01n": // clear
-            return "../chamber/images/weather/night-64px.webp";
+            return "chamber/images/weather/night-64px.webp";
         case "02n": // few clouds
-            return "../chamber/images/weather/night-part-cloudy-64px.webp";
+            return "chamber/images/weather/night-part-cloudy-64px.webp";
         case "03n": // scattered clouds
-            return "../chamber/images/weather/cloudy-64px.webp";
+            return "chamber/images/weather/cloudy-64px.webp";
         case "04n": // broken clouds
-            return "../chamber/images/weather/cloudy-64px.webp";
+            return "chamber/images/weather/cloudy-64px.webp";
         case "09n": // shower rain
-            return "../chamber/images/weather/rainy-64px.webp";
+            return "chamber/images/weather/rainy-64px.webp";
         case "10n": // rain
-            return "../chamber/images/weather/rainy-64px.webp";
+            return "chamber/images/weather/rainy-64px.webp";
         case "11n": // thunderstorm
-            return "../chamber/images/weather/stormy-64px.webp";
+            return "chamber/images/weather/stormy-64px.webp";
         case "13n": // snow
-            return "../chamber/images/weather/snowy-64px.webp";
+            return "chamber/images/weather/snowy-64px.webp";
         case "50n": // mist
-            return "../chamber/images/weather/night-hazy-64px.webp";
+            return "chamber/images/weather/night-hazy-64px.webp";
     }
 }
