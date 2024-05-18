@@ -12,7 +12,8 @@
 
 :root {
     /* Colors */
-        --primary: #089f3f;
+      /*  --primary: #089f3f;  */
+        --primary: lightblue;
         --secondary: #12130F;
         --accent1: #5D737E;
         --accent2: #fdffa3;
@@ -448,3 +449,59 @@ html, body {
     flex-shrink: 0;
 }
 
+/* Navigation */
+
+.navigation {
+    text-align: center;
+	padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav li {
+    display: none;
+    width: 100%;
+}
+
+nav li:first-child {
+    display: block;
+}
+#nav-button.active {
+    background-color: var(--accent1);
+}
+#nav-current::before {
+    display: inline-block;
+    margin: 2px 4px;
+    width: 8px; height: 8px;
+    border-radius: 10px;
+    background-color: var(--accent1);
+    content: "";
+}
+
+nav li.open {
+    display: block;
+}
+
+nav a, nav a:visited {
+	text-decoration: none;
+    display: block;
+    padding: 12px;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0px 2px 7px 2px var(--shadow);
+}
+
+nav a:active {
+    background-color: var(--primary);
+    color: var(--accent2);
+}
+
+.active {
+    background-color: var(--black);
+    color: var(--accent1);
+}
