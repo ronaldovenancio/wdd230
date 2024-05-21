@@ -12,6 +12,8 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 /* Use asynchronous fetch() to request the weather API & check if it is valid */
+
+
 async function apiFetch() {
     try {
       const response = await fetch(url);
@@ -27,8 +29,8 @@ async function apiFetch() {
     }
   }
   apiFetch();
-
   
+
   /* Display results of fetched data */
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
@@ -41,7 +43,10 @@ async function apiFetch() {
     weatherIcon.setAttribute('src', icon_src);
     weatherIcon.setAttribute('alt', desc_cap);
   }
+  
 
+
+  // comentei provisoriamente
   function customIcon(icon) {
     // icon information can be found at https://openweathermap.org/weather-conditions
     /* 01n = "clear sky"
@@ -55,8 +60,12 @@ async function apiFetch() {
      * 50n = "mist"
      */
 
+
+
+    // comentei provisoriamente
+    
     switch(icon) {
-        /* Day Icons */
+        // Day Icons
         case "01d": // clear
             return "../chamber/images/weather/sunny-64px.webp";
         case "02d": // few clouds
@@ -76,7 +85,7 @@ async function apiFetch() {
         case "50d": // mist
             return "../chamber/images/weather/hazy-64px.webp";
 
-        /* Night Icons */
+        //Night Icons
         case "01n": // clear
             return "../chamber/images/weather/night-64px.webp";
         case "02n": // few clouds
@@ -97,3 +106,6 @@ async function apiFetch() {
             return "../chamber/images/weather/night-hazy-64px.webp";
     }
 }
+    
+    
+
