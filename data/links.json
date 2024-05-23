@@ -1,0 +1,101 @@
+{   
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"HG Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+                },
+                {
+                    "url":"week01/chamber-site-plan.html",
+                    "title":"Chamber Site Plan"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url":"week02/design.html",
+                    "title":"Design"
+                },
+                {
+                    "url":"https://codepen.io/ronaldovenancio/pen/oNMGmJL",
+                    "title":"Codepen"
+                },
+                {
+                    "url":"week02/bom.html",
+                    "title":"Bom HTML"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url":"week03/landscape.html",
+                    "title":"Landscape"
+                },
+                {
+                    "url":"week03/lazyload.html",
+                    "title":"Lazyload"
+                },
+                {
+                    "url":"https://codepen.io/ronaldovenancio/pen/rNrdZdO?editors=1100",
+                    "title":"Codepen"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url":"https://codepen.io/ronaldovenancio/pen/OJwZbRq",
+                    "title":"Codepen"
+                },
+                {
+                    "url":"week04/images/w3schools-css-combinators.jpg",
+                    "title":"W3Schools CSS Combinators"
+                },
+                {
+                    "url":"week04/tablebuild.html",
+                    "title":"Table Build"
+                },
+                {
+                    "url":"week04/form-index.html",
+                    "title":"Form"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url":"https://codepen.io/ronaldovenancio/pen/RwBEOxe",
+                    "title":"Codepen"
+                },
+                {
+                    "url":"week05/new-ward-members.json",
+                    "title":"New Ward Members"
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"Prophets"
+                },
+                {
+                    "url":"week05/weather.html",
+                    "title":"Weather"
+                }
+            ]
+        }  
+    ]
+}
