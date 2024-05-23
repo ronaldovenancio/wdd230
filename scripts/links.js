@@ -9,7 +9,7 @@ async function getLinks() {
   }
   
   getLinks();
-  displayLinks(weeks);
+  displayLinks();
 
   /*
 const requestURL = 'data/data.json'; // retrieve the local JSON file
