@@ -20,7 +20,7 @@ async function getLinks() {
     const deltaTime = timestamp - lastFrameTime;
     
     // Call the callback function with deltaTime
-    callback(deltaTime);
+    getLinks(deltaTime);
 
     // Update last frame time
     lastFrameTime = timestamp;
