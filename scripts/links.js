@@ -11,6 +11,35 @@ async function getLinks() {
   getLinks();
   displayLinks();
 
+
+  function displayLinks(callback) {
+  let lastFrameTime = 0;
+
+  function animate(timestamp) {
+    // Calculate the time elapsed since the last frame
+    const deltaTime = timestamp - lastFrameTime;
+    
+    // Call the callback function with deltaTime
+    callback(deltaTime);
+
+    // Update last frame time
+    lastFrameTime = timestamp;
+
+    // Request the next frame
+    requestAnimationFrame(animate);
+  }
+
+  // Start the animation
+  requestAnimationFrame(animate);
+}
+
+// Example usage
+displayLinks(function(deltaTime) {
+  // Update your animation or game logic here using deltaTime
+  //console.log("Delta time:", deltaTime);
+});
+
+
   /*
 const requestURL = 'data/data.json'; // retrieve the local JSON file
 const output = document.querySelector("#json-ouput")
