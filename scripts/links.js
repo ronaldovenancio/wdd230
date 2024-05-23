@@ -12,7 +12,7 @@ async function getLinks() {
   displayLinks();
 
 
-  function displayLinks(callback) {
+  function displayLinks(getLinks) {
   let lastFrameTime = 0;
 
   function animate(timestamp) {
