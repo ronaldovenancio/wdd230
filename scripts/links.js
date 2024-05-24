@@ -1,45 +1,52 @@
 const baseURL = "https://ronaldovenancio.github.io/wdd230/";
 const linksURL = "https://ronaldovenancio.github.io/wdd230/data/links.json";
 
-async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-   // console.log(data);
-   displayLinks(data);
-  }
   
+  async function getLinks() {
+      try {
+          const response = await fetch(linksURL);
+          if (!response.ok) {
+              throw new Error("Failed to fetch data");
+          }
+          const data = await response.json();
+          // console.log(data);
+          displayLinks(data.lessons);
+          return data;
+      } catch (error) {
+          console.error("Error fetching data:", error);
+          throw error;
+      }
+  }
   getLinks();
-
-
-  const fs = require('fs');
-
-function displayLinks(weeksFile) {
-    // Read JSON file
-    fs.readFile(weeksFile, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading file:', err);
-            return;
-        }
-
-        const weeksData = JSON.parse(data);
-
-        // Iterate over each week
-        weeksData.forEach(week => {
-            console.log(`Week: ${week.week_number}`);
-            console.log("Links:");
-            // Iterate over each link in the week
-            week.links.forEach(link => {
-                console.log(`  Title: ${link.title}`);
-                console.log(`  URL: ${link.url}`);
-            });
-            console.log(); // Add a new line between weeks
-        });
-    });
-}
-
-// Example usage:
-displayLinks('data.json');
-
+  
+  const displayLinks = (weeks) => {
+      // console.log(weeks);
+  
+      weeks.forEach((week) => {
+          // console.log(week);
+          const listItem = document.createElement("li");
+          const lessonWeek = document.createTextNode(`Lesson ${week.lesson}: `);
+  
+          listItem.appendChild(lessonWeek);
+  
+          week.links.forEach((link) => {
+              // console.log(link);
+              const tag = document.createElement("a");
+              tag.setAttribute("href", link.url);
+              tag.textContent = link.title;
+  
+              listItem.appendChild(tag);
+  
+              if (week.links.length > 1 && week.links.indexOf(link) < week.links.length - 1) {
+                  listItem.innerHTML += " | ";
+              }
+          });
+          // console.log(listItem);
+  
+          const list = document.querySelector(".la-card");
+          list.appendChild(listItem);
+      });
+  };
   /*
 const requestURL = 'data/data.json'; // retrieve the local JSON file
 const output = document.querySelector("#json-ouput")
