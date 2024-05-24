@@ -24,7 +24,7 @@ const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         // console.log(week);
         const listItem = document.createElement("li");
-        const lessonWeek = document.createTextNode(`Lesson ${week.lesson}: `);
+        const lessonWeek = document.createTextNode(`${week.lesson}: `);
 
         listItem.appendChild(lessonWeek);
 
