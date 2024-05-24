@@ -1,7 +1,7 @@
 {   
-    "lessons": [
+    "weeks": [
         {
-            "lesson": "Week 1",
+            "week": "Week 1",
             "links": [
                 {
                     "url":"week01/holygrail.html",
@@ -19,7 +19,7 @@
         },
 
         {
-            "lesson": "Week 2",
+            "week": "Week 2",
             "links": [
                 {
                     "url":"week02/design.html",
@@ -37,7 +37,7 @@
         },
 
         {
-            "lesson": "Week 3",
+            "week": "Week 3",
             "links": [
                 {
                     "url":"week03/landscape.html",
@@ -55,7 +55,7 @@
         },
 
         {
-            "lesson": "Week 4",
+            "week": "Week 4",
             "links": [
                 {
                     "url":"https://codepen.io/ronaldovenancio/pen/OJwZbRq",
@@ -77,7 +77,7 @@
         },
 
         {
-            "lesson": "Week 5",
+            "week": "Week 5",
             "links": [
                 {
                     "url":"https://codepen.io/ronaldovenancio/pen/RwBEOxe",
