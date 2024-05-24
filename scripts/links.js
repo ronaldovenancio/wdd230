@@ -1,4 +1,3 @@
-import "fs"; 
 const baseURL = "https://ronaldovenancio.github.io/wdd230/";
 const linksURL = "https://ronaldovenancio.github.io/wdd230/data/links.json";
 
