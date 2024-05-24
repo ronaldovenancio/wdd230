@@ -12,33 +12,34 @@ async function getLinks() {
   displayLinks();
 
 
-  function displayLinks(getLinks) {
-  let lastFrameTime = 0;
+  const fs = require('fs');
 
-  function animate(timestamp) {
-    // Calculate the time elapsed since the last frame
-    const deltaTime = timestamp - lastFrameTime;
-    
-    // Call the callback function with deltaTime
-    getLinks(deltaTime);
+function displayLinks(weeksFile) {
+    // Read JSON file
+    fs.readFile(weeksFile, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            return;
+        }
 
-    // Update last frame time
-    lastFrameTime = timestamp;
+        const weeksData = JSON.parse(data);
 
-    // Request the next frame
-    requestAnimationFrame(animate);
-  }
-
-  // Start the animation
-  requestAnimationFrame(animate);
+        // Iterate over each week
+        weeksData.forEach(week => {
+            console.log(`Week: ${week.week_number}`);
+            console.log("Links:");
+            // Iterate over each link in the week
+            week.links.forEach(link => {
+                console.log(`  Title: ${link.title}`);
+                console.log(`  URL: ${link.url}`);
+            });
+            console.log(); // Add a new line between weeks
+        });
+    });
 }
 
-// Example usage
-displayLinks(function(deltaTime) {
-  // Update your animation or game logic here using deltaTime
-  //console.log("Delta time:", deltaTime);
-});
-
+// Example usage:
+displayLinks('data.json');
 
   /*
 const requestURL = 'data/data.json'; // retrieve the local JSON file
