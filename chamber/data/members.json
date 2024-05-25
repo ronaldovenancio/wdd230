@@ -1,0 +1,94 @@
+{
+    "businesses": [
+    {
+        "name": "Açaí Concept",
+        "name_add": "",
+        "address": "110 Madre de Deus Street",
+        "address_end": "Recife, PE 50030-030",
+        "phone": "+5581980157138",
+        "url": "https://acaiconcept.com/country/brasil/",
+        "logo": "../chamber/images/businesses/banner-acai-concept-300x200.webp",
+        "mem_lvl": "Gold"
+    },
+    {
+        "name": "FriSabor",
+        "name_add": "",
+        "address": "12, Loja 1, Armazém 12, Alfredo Lisboa Avenue",
+        "address_end": "Recife, PE 50030-030",
+        "phone": "+5581984670214",
+        "url": "https://frisabor.com.br/historia.php/",
+        "logo": "../chamber/images/businesses/sorveteriafrisabor-300x200.webp",
+        "mem_lvl": "Gold"
+    },
+    {
+        "name": "Restaurante Leite",
+        "name_add": "",
+        "address": "147 Joaquim Nabuco Square",
+        "address_end": "Recife, PE 50010-480",
+        "phone": "+558199344825",
+        "url": "https://www.facebook.com/restauranteleite/",
+        "logo": "../chamber/images/businesses/restauranteleite-300x200.webp",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Delta Expresso Coffee",
+        "name_add": "",
+        "address": "12 Martins de Barros Avenue",
+        "address_end": "Recife, PE 50020-280",
+        "phone": "+558121274763",
+        "url": "https://deltaexpresso.com.br",
+        "logo": "../chamber/images/businesses/deltaexpressocoffee-300x200.webp",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Bar Bodega do Veio",
+        "name_add": "",
+        "address": "328 Mariz e Barros Street",
+        "address_end": "Recife, PE 50020-280",
+        "phone": "+558132764312",
+        "url": "https://restaurantguru.com.br/Bodega-Premium-Recife#google_vignette",
+        "logo": "../chamber/images/businesses/barbodegadoveio-300x200.webp",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "DiBranco Reception",
+        "name_add": "Buffet & Receptions",
+        "address": "199 Apolo Street",
+        "address_end": "Recife, PE 50030-020",
+        "phone": "+558132271188",
+        "url": "https://www.dibranco.com.br/",
+        "logo": "../chamber/images/businesses/dibrancorecepcao-300x200.webp",
+        "mem_lvl": "Bronze"
+    },
+    {
+        "name": "Rooftop Restaurant",
+        "name_add": "",
+        "address": "18 Alfredo Lisboa Avenue",
+        "address_end": "Recife, PE 50030-030",
+        "phone": "+558132243794",
+        "url": "https://www.facebook.com/caisrooftop/",
+        "logo": "../chamber/images/businesses/rooftoprestaurante-300x200.webp",
+        "mem_lvl": "Silver"
+    },
+    {
+        "name": "Museu Cais do Sertão",
+        "name_add": "",
+        "address": "Armazen 10, Alfredo Lisboa Avenue",
+        "address_end": "Recife, PE 50030-150",
+        "phone": "+558131828267",
+        "url": "https://caisdosertao.pe.gov.br",
+        "logo": "../chamber/images/businesses/museucaisdosertao-300x200.webp",
+        "mem_lvl": "Silverr"
+    },
+    {
+        "name": "Polo Digital",
+        "name_add": "",
+        "address": "222 Cais do Apolo Street",
+        "address_end": "Recife, PE 50030-230",
+        "phone": "+558134198014",
+        "url": "https://www.portodigital.org",
+        "logo": "../chamber/images/businesses/portodigital-300x200.webp",
+        "mem_lvl": "Gold"
+    }
+    ]
+}

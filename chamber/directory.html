@@ -39,57 +39,23 @@
     <nav>
         <ul class="navigation">
             <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
-            <li class="nav-li"><a id="nav-current" href="index.html">Home</a></li> <!-- Current Page or Atual Page -->
+            <li class="nav-li"><a  href="index.html">Home</a></li> 
             <li class="nav-li"><a href="discover.html">Discover</a></li> 
-            <li class="nav-li"><a href="directory.html">Directory</a></li> 
+            <li class="nav-li"><a id="nav-current" href="directory.html">Directory</a></li> <!-- Current Page or Atual Page -->
             <li class="nav-li"><a href="join.html">Join</a></li> 
         </ul>
     </nav>
 
-    <main class="home-grid">
-        <div class="call-to-action">
-            <picture id="hero-image">
-                <source media="(max-width: 500px)" srcset="../chamber/images/recife-500x250.webp">
-                <source media="(min-width: 500px) and (max-width: 1000px)" srcset="../chamber/images/recife-1000x500.webp">
-                <source media="(min-width: 1000px)" srcset="../chamber/images/recife-1500x750.webp">
-                <img data-src="../chamber/images/recife-1500x750.webp" src="../chamber/images/recife-1500x750.webp" alt="Image of Recife-PE, Brazil" width= "1500" height="750">
-            </picture>
-
-
-
-            <h2 class="hero-title">Recife City Welcomes You</h2>
-
-        </div>
-        <div class="events">
-            <h3 class="box-title">Events</h3>
-            <h4 class="box-subtitle">Mark Zero Recife & Recife Mayor at the Brazilian Veneza Expo Center</h4>
-            <p class="box-content">There is an upcoming event in Mark Zero Recife, Pernambuco-Brazil on June 24-25, 10am-9pm. If you are a lover of folclore and events cultural. Be sure to check it out! </p>
-        </div>
-        <div class="weather">
-            <h3 class="box-title">Weather</h3>
-            <div class="box-content">
-                <span id="weather-info"></span>
-                <h4>Recife-PE, Brazil</h4>
-                <p><span id="current-temp">__</span>&deg;F</p>
-                <figure>
-                    <img id="weather-icon" src="../chamber/images/placeholder-64x64.webp" alt="Weather Icon" width="48" height="48">
-                    <figcaption></figcaption>  
-                </figure>
+    <main class="directory-grid">
+        <div class="directory-box">
+            <h2 class="box-title">Business Directory</h2>
+            <div id="view-buttons" class="box-content">
+                <button id="button-cards"><i class="fas fa-th-large"></i><b>Card</b></button>
+                <button id="button-list"><i class="fas fa-list"></i><b>List</b></button>
             </div>
-        </div>
-        <div class="spotlight">
-            <h3 class="box-title">Spotlight</h3>
-            <div class="spotlight-grid">
-                <div id="spotlight-1" class="sub-box"></div>
-                <div id="spotlight-2" class="sub-box"></div>
-                <div id="spotlight-3" class="sub-box"></div>
+            <div id="directory-area" class="view-cards">
+                <!--This section to be filled in with JSON data-->
             </div>
-            
-        </div>
-        <div class="join">
-            <h3 class="box-title">Join</h3>
-            <p class="box-content">Do you wish to be part of our community? Apply for our Chamber of Commerce today! We look forward to working with you.</p>
-            <button id="join-button" onclick="window.location.href='join.html';">Join</button>
         </div>
     </main>
     
@@ -115,7 +81,8 @@
     <script src="../chamber/scripts/get-dates.js"></script>
     <script src="../chamber/scripts/last-visited.js"></script>
    <!-- <script src="../chamber/scripts/responsive-menu.js"></script>  -->
-    <script src="../chamber/scripts/weather.js"></script>
+   <!-- <script src="../chamber/scripts/weather.js"></script>  -->
+    <script src="../chamber/scripts/business-directory.js"></script>
    
    </div> <!-- End of content -->
 </body>
