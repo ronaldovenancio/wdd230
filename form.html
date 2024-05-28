@@ -62,7 +62,7 @@
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label for="name" class="top">User Name* </label>
-                    <input type="text" id="name" name="name" pattern="[A-Za-z\s.]{5,}" placeholder="FirstName LastName" title="Please enter your first and last name with at least 5 letters." autocomplete="given-name" required />
+                <input type="text" id="name" name="name" pattern="[A-Za-z\s.]{5,}" placeholder="FirstName LastName" title="Please enter your first and last name with at least 5 letters." autocomplete="given-name" required />
                 
                 <label for="password"  class="top">Password* </label>
                 <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters." required />
@@ -93,12 +93,13 @@
                     <option value="10">10</option>  -->
                 </datalist>
             </fieldset>
-        </div>
-
+        
 
             <div id="submitmessage" class="hide" role="alert"></div>
             <input class="submitBtn" type="submit" onclick="validateForm(event)" value="Applicant Request" />
         </form>
+    </div>
+
         
     </main>
    

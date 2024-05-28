@@ -51,6 +51,7 @@
             <li class="nav-li"><a id="nav-current" href="form.html">Form</a></li> <!-- Current Page or Atual Page -->
         </ul>
     </nav>
+</div>
 
     <main>
 
@@ -84,9 +85,9 @@
                 -->
 
                 <section class="card">
-                    <div class="card-header">
-                       <!-- <h3>Learning Activities</h3>  -->
-                    </div>
+                     <div class="card-header">
+                       <h3>Weeks - Links</h3>
+                    </div> 
                     <div class="card-content">
                         <ul class="la-card"></ul>
                     </div>
@@ -107,15 +108,14 @@
                     <figure>
                         <img id="weather-icon" src="images/placeholder/placeholder-64x64.webp" alt="Weather Icon" width="64" height="64">
                         <figcaption></figcaption>
-                    </figure>
-
-                    
+                    </figure>               
                 </div>
                 <div id="visits">
                     <p>Visit Count: <span id="visit-count"></span></p>
                 </div>
             </div>
         </div>
+
         <!-- map of the temple --> 
         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.636515462533!2d-34.91368912479255!3d-8.036359280244959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1900b968b585%3A0x7bdea9fb84e4b3f6!2sTemplo%20do%20Recife%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1715964927130!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -128,22 +128,20 @@
                     <form id="contact-form">
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label>Page Rating<span id="display-rating">-</span><input type="range" id="input-rating"  value="5" min="0" max="10"></label>
-                        <label>First Name<input id="input-fname" type="text" name="fname" required/>
-                        </label>
-                        <label>Last Name<input type="text" id="input-lname"  name="lname" 
-                        required/>
-                        </label>
+                        <label for="input-rating" >Page Rating</label>
+                        <span id="display-rating">-</span>
+                        <input type="range" id="input-rating"  value="5" min="0" max="10" />
+                        <label for="input-fname" >First Name</label>
+                        <input id="input-fname" type="text" name="fname" required />
+                        <label for="input-lname" >Last Name </label>
+                        <input type="text" id="input-lname"  name="lname" required />
                         <label for="input-email" >Email</label>
                         <input type="email" id="input-email"  name="email" placeholder="example@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="off" required />
+                        <label for="input-user" >Username Identifier</label>
+                        <input type="password" id="input-user"  name="username" pattern="(?=.*d){5,12}" title="Username must be between 5-12 characters and include at least 1 number." autocomplete="off"  required />
+                        <label for="input-confirm">Confirm Username Identifier</label>
+                        <input type="text" id="input-confirm"  name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." autocomplete="off" required/>
                         
-
-                        <label for="input-user" >Username Identifier
-                            <input type="password" id="input-user"  name="username" pattern="(?=.*d){5,12}" title="Username must be between 5-12 characters and include atleast 1 number." autocomplete="off"  required/>
-                        </label>
-                        <label for="input-confirm" >Confirm Username Identifier
-                            <input type="text" id="input-confirm"  name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." autocomplete="off" required/>
-                        </label>
                         <p class="p-hint hidden">* Username Identifier does not match.</p>
                     </fieldset>
                     <input id="form-submit" type="submit" value="Send Form"/>
@@ -185,11 +183,8 @@
             </div>
         </div>
 
-
-
     </main>
-    </div>
-
+    
     <footer class="footer">
         <p>
             &copy; <span id="current-year"></span> .:|:. Ronaldo Venancio da Silva ✌️ .:|:. Recife-Brazil 🇧🇷. 
