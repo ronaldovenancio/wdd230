@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link href="favicon.ico" rel="icon">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+   
 
     <meta name="og:type" content="website">
     <meta name="og:title" content="WDD230 Assignment Portal">
@@ -47,130 +49,59 @@
             <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
             <li class="nav-li"><a href="index.html">Home</a></li> 
             <li class="nav-li"><a href="chamber/index.html">Chamber</a></li> 
-            <li class="nav-li"><a href="directory.html">Site Plan</a></li> 
-            <li class="nav-li"><a id="nav-current" href="week04/form-index.html">Form</a></li> <!-- Current Page or Atual Page -->
+            <li class="nav-li"><a href="week01/chamber-site-plan.html">Site Plan</a></li> 
+            <li class="nav-li"><a id="nav-current" href="form.html">Form</a></li> <!-- Current Page or Atual Page -->
         </ul>
     </nav>
-
-    <main>
-
-        <div id="hero">
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/hero-small-500x250.webp" width="500" height="250">
-                <source media="(min-width: 520px) and (max-width: 1020px)" srcset="images/hero-medium-1000x500.webp" width="1000" height="500">
-                <img id="hero-img" src="images/hero-large-1278x750.webp" alt="Picture of the Recife-PE Temple" width="1500" height="750">
-            </picture>
-             <div id="hero-text">Recife-PE Temple</div>
-        </div>
-
-        <div id="page-title" class="adjustable-b">
-            <h2>WDD 230: Web Frontend Development</h2>
-            <hr>
-        </div>
-
-        <div id="activities" class="adjustable">
-            <h2 class="box-title">Learning Activities</h2>
-            <div class="box-content">
-                <ul>
-                    <li>Week 01: <span id="week01"></span></li>
-                    <li>Week 02: <span id="week02"></span></li>
-                    <li>Week 03: <span id="week03"></span></li>
-                    <li>Week 04: <span id="week04"></span></li>
-                    <li>Week 05: <span id="week05"></span></li>
-                    <li>Week 06: <span id="week06"></span></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Falta acrescentar -->
-
-
-        <div id="information" class="adjustable">
-            <h2 class="box-title">Information</h2>
-            <div class="box-content">
-                <div id="weather">
-                    <span id="weather-info"></span>
-                    <p>The current temperature in Recife-PE, Brazil is <span id="current-temp">__</span>&deg;F</p>
-                    <!-- Retirado a figura do tempo até correçao de erros ao subir para o github
-                    <figure>
-                        <img id="weather-icon" src="../chamber/images/placeholder-64x64.webp" alt="Weather Icon" width="64" height="64">
-                        <figcaption></figcaption>
-                    </figure>
-                    -->
-                </div>
-                <div id="visits">
-                    <p>Visit Count: <span id="visit-count"></span></p>
-                </div>
-            </div>
-        </div>
-        <!-- map of the temple --> 
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.636515462533!2d-34.91368912479255!3d-8.036359280244959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1900b968b585%3A0x7bdea9fb84e4b3f6!2sTemplo%20do%20Recife%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1715964927130!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div id="contact" class="adjustable">
-            <h2 class="box-title">Contact Form</h2>
-            <div class="box-content">
-                <div id="form-input">
-                    <form id="contact-form">
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <label>Page Rating<span id="display-rating">-</span><input id="input-rating" type="range" value="5" min="0" max="10"></label>
-                        <label>First Name<input id="input-fname" type="text" name="fname" required></label>
-                        <label>Last Name<input id="input-lname" type="text" name="lname" required></label>
-                        <label>Email<input id="input-email" type="email" name="email" placeholder="example@email.com" required></label>
-
-                        <label>Username Identifier
-                            <input id="input-user" type="password" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." required>
-                        </label>
-                        <label>Confirm Username Identifier
-                            <input id="input-confirm" type="text" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." required>
-                        </label>
-                        <p class="p-hint hidden">* Username Identifier does not match.</p>
-                    </fieldset>
-                    <input id="form-submit" type="submit" value="Send Form">
-                    </form>
-                </div>
-                <div id="form-output" class="hidden">
-                    <hr>
-                    <table>
-                        <caption>Figure 1: Example HTML Table Output</caption>
-                        <thead>
-                            <tr class="table-header">
-                                <th colspan="2" scope="colgroup">Form Input</th>
-                            </tr>
-                            <tr class="table-subheader">
-                                <th scope="col">Field</th>
-                                <th scope="col">Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Name:</td>
-                                <td><span id="output-name">N/A</span></td>
-                            </tr>
-                            <tr>
-                                <td>Email:</td>
-                                <td><span id="output-email">N/A</span></td>
-                            </tr>
-                            <tr>
-                                <td>Rating:</td>
-                                <td><span id="output-rating">N/A</span></td>
-                            </tr>
-                            <tr>
-                                <td>Username:</td>
-                                <td><span id="output-username">N/A</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+</div>
+    <main class="form-section">
+        <div id="formmessage" class="" role="alert"></div>
+        <div class="box-content">  
+    
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label for="name" class="top">User Name* </label>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z\s.]{5,}" placeholder="FirstName LastName" title="Please enter your first and last name with at least 5 letters." autocomplete="given-name" required />
+                
+                <label for="password"  class="top">Password* </label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters." required />
+                
+                <label for="password2"  class="top">Confirm Password* </label>
+                <input name="password2" id="password2" type="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters." required />
+                
+                <label for="email" class="top">Email* </label>
+                    <input
+                        type="email" id="email" name="email" placeholder="example@email.com"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        title="Must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a ''.'')" autocomplete="off" 
+                        required />
+                
+                <label for="rating" class="top">Page Rating</label>
+                <div id="rangevalue">1</div>
+                <input type="range" id="rating" name="rating" min="1" max="5" value="1" step="1" list="rangevalues" />
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  <!--  <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>  -->
+                </datalist>
+            </fieldset>
         </div>
 
 
-
+            <div id="submitmessage" class="hide" role="alert"></div>
+            <input class="submitBtn" type="submit" onclick="validateForm(event)" value="Applicant Request" />
+        </form>
+        
     </main>
-    </div>
+   
 
     <footer class="footer">
         <p>
@@ -180,11 +111,12 @@
        <!-- <p id="lastModified"></p>  -->
     </footer>
     <script src="scripts/get-dates.js"></script>
-    <script src="scripts/last-visited.js"></script>  
-    <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/form-submit.js"></script>
+    <script src="scripts/form.js"></script>
+    <!--  <script src="scripts/last-visited.js"></script>  -->
+    <!--  <script src="scripts/responsive-menu.js"></script>  -->
+    <!-- <script src="scripts/weather.js"></script>  -->
+    <!-- <script src="scripts/form-submit.js"></script>  -->
 </body>
     
 </html>

@@ -1,0 +1,208 @@
+/* import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+:root {
+    /* color palette for webpage */
+    --primary-color: #002e5d;
+    --secondary-color: #0062b8;
+    --accent1-color: #ffffff;
+    --accent2-color: #666666;
+    --accent3-color: #c0c0c0;
+    --accent4-color: #5d0000;
+
+    --success-text: #3c763d;
+    --success-background: #dff0d8;
+    --success-border: #d6e9c6;
+
+    --error-text: #a94442;
+    --error-background: #f2dede;
+    --error-border: #ebccd1;
+
+    /* font styles for webpage */
+    --heading-font: Paytone One, Georgia, serif;
+    --paragraph-font: "Trebuchet MS", Arial, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #002e5d; /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: #002e5d; /* paragraph text on a white background */
+    --paragraph-color-on-color: #666666; /* paragraph text on a colored background */
+    --paragraph-background-color: #ffffff;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #002e5d;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #0062b8;
+}
+
+/*----------- FORM --------------*/
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 0.5rem 5%;
+}
+form legend {
+    color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+}
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form input.submitBtn {
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    margin: 10px 0 2rem 2%;
+    font-size: 1.0rem;
+    /* width: 96%;
+    max-width: 20rem; */
+}
+form input.submitBtn:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+form label.top input:required {
+    border-left: #a94442 solid 6px;
+}
+form label.top input:required:valid {
+    border-left: var(--success-text) solid 6px;
+}
+/* input[name="email"]:required:invalid {
+	background-color: #f2dede;
+} */
+input[name="email"]:required:valid {
+    background-color: var(--success-background);
+}
+
+#formmessage {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+#submitmessage {
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.success {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--success-background);
+    border-color: var(--success-border);
+    color: var(--success-text);
+}
+.error {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--error-background);
+    border-color: var(--error-border);
+    color: var(--error-text);
+}
+.show {
+    display: flex;
+}
+.hide {
+    display: none;
+}
+
+#rating {
+    width: 230px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#rangevalue {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.25rem;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+    max-width: 1.5rem;
+    text-align: center;
+}
+
+#rangevalues {
+    display: flex;
+    /* text-align: center; */
+    /* margin: 0 0 0 5px; */
+    width: 250px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
+
+/*----------- Record.html - Form conformation page --------------*/
+
+#record .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--success-background);
+    border-color: var(--success-border);
+    color: var(--success-text);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#record h1 {
+    text-align: center;
+}
+#record p {
+    text-align: center;
+}
+#timestamp {
+    font-size: 0.75em;
+}
+
+#record a {
+    align-self: center;
+}
+
+button.homeBtn {
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.homeBtn:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}

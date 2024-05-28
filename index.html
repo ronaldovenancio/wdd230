@@ -47,8 +47,8 @@
             <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li> <!-- Hamburger Menu -->
             <li class="nav-li"><a href="index.html">Home</a></li> 
             <li class="nav-li"><a href="chamber/index.html">Chamber</a></li> 
-            <li class="nav-li"><a href="directory.html">Site Plan</a></li> 
-            <li class="nav-li"><a id="nav-current" href="week04/form-index.html">Form</a></li> <!-- Current Page or Atual Page -->
+            <li class="nav-li"><a href="week01/chamber-site-plan.html">Site Plan</a></li> 
+            <li class="nav-li"><a id="nav-current" href="form.html">Form</a></li> <!-- Current Page or Atual Page -->
         </ul>
     </nav>
 
@@ -128,20 +128,25 @@
                     <form id="contact-form">
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <label>Page Rating<span id="display-rating">-</span><input id="input-rating" type="range" value="5" min="0" max="10"></label>
-                        <label>First Name<input id="input-fname" type="text" name="fname" required></label>
-                        <label>Last Name<input id="input-lname" type="text" name="lname" required></label>
-                        <label>Email<input id="input-email" type="email" name="email" placeholder="example@email.com" required></label>
-
-                        <label>Username Identifier
-                            <input id="input-user" type="password" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." required>
+                        <label>Page Rating<span id="display-rating">-</span><input type="range" id="input-rating"  value="5" min="0" max="10"></label>
+                        <label>First Name<input id="input-fname" type="text" name="fname" required/>
                         </label>
-                        <label>Confirm Username Identifier
-                            <input id="input-confirm" type="text" name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." required>
+                        <label>Last Name<input type="text" id="input-lname"  name="lname" 
+                        required/>
+                        </label>
+                        <label for="input-email" >Email</label>
+                        <input type="email" id="input-email"  name="email" placeholder="example@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="off" required />
+                        
+
+                        <label for="input-user" >Username Identifier
+                            <input type="password" id="input-user"  name="username" pattern="(?=.*d){5,12}" title="Username must be between 5-12 characters and include atleast 1 number." autocomplete="off"  required/>
+                        </label>
+                        <label for="input-confirm" >Confirm Username Identifier
+                            <input type="text" id="input-confirm"  name="username" pattern="(?=.*d).{5,12}" title="Username must be between 5-12 characters and include atleast 1 number." autocomplete="off" required/>
                         </label>
                         <p class="p-hint hidden">* Username Identifier does not match.</p>
                     </fieldset>
-                    <input id="form-submit" type="submit" value="Send Form">
+                    <input id="form-submit" type="submit" value="Send Form"/>
                     </form>
                 </div>
                 <div id="form-output" class="hidden">

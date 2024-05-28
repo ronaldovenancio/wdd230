@@ -4,7 +4,8 @@
 
 :root {
     /* Colors */
-        --primary: #089f3f;
+       /* --primary: #089f3f;  */
+        --primary:darkblue;
         --secondary: #12130F;
         --accent1: #5D737E;
         --accent2: #fdffa3;

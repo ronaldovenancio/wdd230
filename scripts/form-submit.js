@@ -18,7 +18,7 @@ const formSubmit = document.querySelector("#form-submit");
 const formOutput = document.querySelector("#form-output");  // Displays the submitted form with a Table
 const allHints = document.querySelectorAll(".p-hint"); // A list of all the form hint elements
 
-displayRating.textContent = "5";
+//displayRating.textContent = "5";
 
 inputRating.addEventListener("change", () => {
     let currentRating = parseInt(inputRating.value);
