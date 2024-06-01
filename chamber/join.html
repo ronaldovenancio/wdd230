@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,8 +18,6 @@
     <title>Ronaldo Venancio da Silva - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development - Ronaldo Venancio da Silva - Course Assignment">
     <meta name="author" content="Ronaldo Venancio da Silva">
-
-
 </head>
 <body>
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
@@ -27,8 +25,8 @@
     <div class="page-content"> 
     <span id="banner"></span>
     <header>
-       <!-- <img id="header-logo" src="../chamber/images/recifecitychamber-b-100x100.webp" alt="Recife City Chamber Logo" width="100" height="100"> -->
-        <h1 id="header-company">Recife City Chamber</h1>
+        <img id="header-logo" src="../chamber/images/rcc-2.webp" alt="Recife Chamber of Commerce Logo" width="100" height="100">
+        <h1 id="header-company">Recife Chamber of Commercer</h1>
         <span id="current-date"></span>
         <div id="header-links">
             <a href="https://www.facebook.com/" target="_blank"><img id="link-facebook" src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="64" height="64"></a>
@@ -48,7 +46,7 @@
 
     <main class="join-grid">
         <div id="form-area"> 
-            <h2 id="form-title">Recife City Chamber Application</h2>
+            <h2 id="form-title">Recife Chamber of Commercer Application</h2>
             <p id="form-instructions">Please complete the form below so we may review your application. Required fields are marked with an asterisk.</p>
 
         <form method="get" action="thankyou.html">
@@ -110,14 +108,14 @@
     
     <footer>
         <div class="info-company"> 
-         <!--   <img id="footer-logo" src="../chamber/images/recifecitychamber-a-180x180.webp" alt="Recife City Chamber Logo" width="180" height="180"> -->
-            <h3 id="footer-company">Recife City Chamber</h3>
+            <img id="footer-logo" src="../chamber/images/rcc-2.webp" alt="Recife City Chamber Logo" width="180" height="180"> 
+            <h3 id="footer-company">Recife Chamber of Commerce</h3>
         </div>
         <div class="info-contact">
             <p id="company-address"><strong>123 Mark Zero Street, Recife-PE, 12345</strong></p>
             <p id="company-email"><strong>contactus@recifecitychamber.us</strong></p>
             <p id="company-phone"><strong>(081)-9876-5432</strong></p>
-            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span><a href="index.html">Location Map</a></p>
+            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span><a href="https://maps.app.goo.gl/MJjt9VY4aYwTdUcy9">Location Map</a></p>        
         </div>
 
         <div class="info-stats">
@@ -130,7 +128,8 @@
     <script src="../chamber/scripts/get-dates.js"></script>
     <script src="../chamber/scripts/last-visited.js"></script>
    <!-- <script src="../chamber/scripts/responsive-menu.js"></script>  -->
-    <script src="../chamber/scripts/weather.js"></script>
+   <!-- <script src="../chamber/scripts/weather.js"></script> -->
+    <script src="../chamber/scripts/get-weekday.js"></script>
    
    </div> <!-- End of content -->
 </body>

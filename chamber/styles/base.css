@@ -80,9 +80,12 @@ body {
 /* Header */
 
 #banner {
-    padding: 4px 10px;
+    padding: 1rem; 
     text-align: center;
-    background-color: var(--white);
+    /*background-color: var(--white); */
+    background-color: black;
+    color: yellow;
+    font-size: 1.5rem;
 }
 
 header {
@@ -269,6 +272,125 @@ main {
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
+/* Weather Article ********************************* */
+
+#weather {
+    width: 100%;
+}
+#weather h3,
+#five-day h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: orange;
+    color: var(--text-color-main);
+    text-transform: uppercase;
+}
+
+#weather p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+#weather figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.temp-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+#current-temp {
+    font-size:2rem;
+    font-weight: 800;
+}
+.temp-area figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+#weather-description {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.alt-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 15px;
+    /* border: 1px solid var(--accent3-color); */
+    font-size: 1.5rem;
+}
+.weather-box span {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+#five-day {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#forecast .weather-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    /* margin: 20px 0; */
+}
+#forecast .weather-day:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.weather-day h5 {
+    /* font-size: 1.2rem; */
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.weather-day figcaption {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+#forecast figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.temp-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp-div p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+.temp-div p:nth-last-child(1) {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+
+
+
 /* Footer */
 
 footer {
@@ -409,18 +531,20 @@ strong {
     grid-column: 2/3; grid-row: 2/3;
     padding: 30px 10px;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .weather figure {
     grid-column: 1/2; grid-row: 2/3;
     width: 100%; max-width: 132px;
-    margin: 0 auto;
+    margin-left: 2.5rem;
 }
 .weather figcaption {
     text-align: center;
     background: none;
     color: var(--black);
+    margin-left: 6rem;
+    margin-top: -1.5rem;
 }
 #weather-icon {
     padding: 10px;
@@ -571,6 +695,65 @@ textarea {
     font-weight: 500;
     font-size: 24px;
 }
+
+/* TEMP ************************* */
+.hero {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+.hero-home {
+    background-image: url("../images/recife-1500x750.webp");
+}
+.hero-join {
+    background-image: url("../images/hero/litchfield-park.webp");
+}
+.hero-directory {
+    background-image: url("../images/hero/buisness-park.webp");
+}
+.hero-discover {
+    background-image: url("../images/hero/sunset.webp");
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.hero-content h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--text-color-secondary);
+    margin: 20px;
+}
+.hero-content p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--accent3-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #651717;
+}
+
 
 /* Join Page CSS Effects */
 input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {

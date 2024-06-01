@@ -23,9 +23,10 @@
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script> <!-- Enables Font Awesome Icons -->
     <!-- Begining of the content -->   
     <div class="page-content"> 
+    <span id="banner"></span> 
     <header>
-        <!-- <img id="header-logo" src="../chamber/images/recifecitychamber-b-100x100.webp" alt="Recife City Chamber Logo" width="100" height="100"> -->
-        <h1 id="header-company">Recife City Chamber</h1>
+        <img id="header-logo" src="../chamber/images/rcc-2.webp" alt="Recife Chamber of Commerce Logo" width="100" height="100">
+        <h1 id="header-company">Recife Chamber of Commerce</h1>
         <span id="current-date"></span>
         <div id="header-links">
             <a href="https://www.facebook.com/" target="_blank"> <img id="link-facebook" src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="64" height="64"> </a>
@@ -144,14 +145,15 @@
     
     <footer>
         <div class="info-company"> 
-            <!--   <img id="footer-logo" src="../chamber/images/recifecitychamber-a-180x180.webp" alt="Recife City Chamber Logo" width="180" height="180"> -->
-            <h3 id="footer-company">Recife City Chamber</h3>
+            <img id="footer-logo" src="../chamber/images/rcc-2.webp" alt="Recife City Chamber Logo" width="180" height="180"> 
+            <h3 id="footer-company">Recife Chamber of Commerce</h3>
         </div>
         <div class="info-contact">
             <p id="company-address"><strong>123 Mark Zero Street, Recife-PE, 12345</strong></p>
             <p id="company-email"><strong>contactus@recifecitychamber.us</strong></p>
             <p id="company-phone"><strong>(081)-9876-5432</strong></p>
-            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span><a href="index.html">Location Map</a></p>
+            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i>
+            </span> <a href="https://maps.app.goo.gl/MJjt9VY4aYwTdUcy9">Location Map</a></p>        
         </div>
         <div class="info-stats">
             <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span id="visit-since"></span></p>
@@ -166,6 +168,7 @@
     <script src="../chamber/scripts/lazyload.js"></script>
     <script src="../chamber/scripts/responsive-menu.js"></script>
     <script src="../chamber/scripts/chamber.js"></script>
+    <script src="../chamber/scripts/get-weekday.js"></script>
     </div> <!-- End of content -->
 </body>
 </html>
